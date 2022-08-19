@@ -1,11 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * insertLeaf - insert new Leaf
- * @r: root of max heap tree
- * @value: value of new leaf
- * Return: pointer to leaf
- */
+ ** insertLeaf - insert new Leaf
+ ** @r: root of max heap tree
+ ** @value: value of new leaf
+ ** Return: pointer to leaf
+ **/
 heap_t *insertLeaf(heap_t *r, int value)
 {
 	heap_t *q[1025] = {NULL}, *leaf = NULL;
@@ -37,11 +37,11 @@ heap_t *insertLeaf(heap_t *r, int value)
 }
 
 /**
- * heap_insert - inserts a value into a Max Binary Heap
- * @root: double pointer to the root node of the Heap
- * @value: value to put in the new node
- * Return: pointer to the inserted node or NULL if failed
- */
+ ** heap_insert - inserts a value into a Max Binary Heap
+ ** @root: double pointer to the root node of the Heap
+ ** @value: value to put in the new node
+ ** Return: pointer to the inserted node or NULL if failed
+ **/
 heap_t *heap_insert(heap_t **root, int value)
 {
 	binary_tree_t *leaf = NULL, *tmp = NULL;
