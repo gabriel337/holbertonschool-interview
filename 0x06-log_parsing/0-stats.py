@@ -3,7 +3,7 @@
 
 import sys
 
-CODES = {
+CODE = {
     '200': 0,
     '301': 0,
     '400': 0,
@@ -22,13 +22,13 @@ try:
         if len(on_line) > 2:
             status = on_line[-2]
             current_size = int(on_line[-1])
-            if status in CODES:
-                CODES[status] += 1
+            if status in CODE:
+                CODE[status] += 1
             total_size += current_size
             lines += 1
             if lines == 10:
                 print("File size: {:d}".format(total_size))
-                for key, value in sorted(CODES.items()):
+                for key, value in sorted(CODE.items()):
                     if value != 0:
                         print("{}: {:d}".format(key, value))
                     lines = 0
@@ -36,6 +36,6 @@ except KeyboardInterrupt:
     pass
 finally:
     print("File size: {:d}".format(total_size))
-    for key, value in sorted(CODES.items()):
+    for key, value in sorted(CODE.items()):
         if value != 0:
             print("{}: {:d}".format(key, value))
