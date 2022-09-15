@@ -4,7 +4,7 @@
  * sandpiles_sum - computes the sum of two sandpiles
  * @grid1: stable sandpile to add to grid2
  * @grid2: stable sandpile to add to grid1
- */
+ **/
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
 	int i, j;
