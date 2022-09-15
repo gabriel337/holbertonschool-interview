@@ -17,7 +17,7 @@ STATUS = {
     '500': 0
 }
 total_size = 0
-num = 0 
+num = 0
 try:
     for argument in sys.stdin:
         arguments = argument.split(" ")
@@ -41,3 +41,4 @@ finally:
     for key, value in sorted(STATUS.items()):
         if value != 0:
             print("{}: {:d}".format(key, value))
+            
