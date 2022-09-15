@@ -1,4 +1,4 @@
-# 0x06. Log Parsing
+# 0x06. Log Parsing :D
 
 # Requirements
 ## General
