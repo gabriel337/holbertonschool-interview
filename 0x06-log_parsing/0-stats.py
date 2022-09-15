@@ -31,7 +31,7 @@ try:
                 for key, value in sorted(CODES.items()):
                     if value != 0:
                         print("{}: {:d}".format(key, value))
-                    lines = 0
+                lines = 0
 except KeyboardInterrupt:
     pass
 finally:
