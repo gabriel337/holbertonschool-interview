@@ -39,4 +39,3 @@ finally:
     for key, value in sorted(CODES.items()):
         if value != 0:
             print("{}: {:d}".format(key, value))
-
