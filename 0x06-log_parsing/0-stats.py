@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""
-script that reads stdin line by line and computes metrics
-"""
-from ast import Num
-import sys
+""" script that reads stdin line by line and computes metrics """
 
+import sys
 
 STATUS = {
     '200': 0,
@@ -16,6 +13,7 @@ STATUS = {
     '405': 0,
     '500': 0
 }
+
 total_size = 0
 num = 0
 try:
