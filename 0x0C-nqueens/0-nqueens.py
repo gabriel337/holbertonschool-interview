@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""N queens puzzle."""
+"""N queens puzzle"""
 import sys
 
 
@@ -12,7 +12,7 @@ def cposition(b, row, col):
 
 
 def check(b, col):
-    """Backtrack."""
+    """Backtrack"""
     n = len(b)
     if col is n:
         print(str([[c, b[c]] for c in range(n)]))
