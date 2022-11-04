@@ -4,7 +4,7 @@ import sys
 
 
 def cposition(b, row, col):
-    """Check position."""
+    """Check position"""
     for c in range(col):
         if b[c] is row or abs(b[c] - row) is abs(c - col):
             return False
