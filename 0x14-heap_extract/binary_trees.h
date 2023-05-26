@@ -41,4 +41,8 @@ int heap_extract(heap_t **root);
 /*Functions printing*/
 void binary_tree_print(const binary_tree_t *);
 
+<<<<<<< HEAD
 #endif /* _BINARY_TREES_H_ */
+=======
+#endif /* _BINARY_TREES_H_ */
+>>>>>>> 9affc2a9f59841639fec8fa97dc1cce8214f9b41
